@@ -22,7 +22,7 @@ public class Main {
 //            System.out.println("count " + count);
 //            count++;
 //        } while (count <= 9);
-        sumFirstAndLastDigit(125);
+        numberToWord(123);
     }
 
     public static int sumDigits(int number) {
@@ -121,5 +121,117 @@ public class Main {
         return true;
     }
 
+    public static int getGreatestCommonDivisor(int num1, int num2) {
+        if (num1 < 10 || num2 < 10) {
+            return -1;
+        }
 
+        int smaller = 0;
+
+        if (num1 < num2) {
+            smaller = num1;
+        } else {
+            smaller = num2;
+        }
+
+        int greatest = 0;
+        int common1 = 0;
+        int common2 = 0;
+
+        for (int i = 1; i <= smaller; i++) {
+            if (num1 % i == 0) {
+                common1 = i;
+            }
+            if (num2 % i == 0) {
+                common2 = i;
+            }
+            if (common1 == common2) {
+                greatest = common1;
+            }
+        }
+        return greatest;
+    }
+
+    public static void printFactors(int num) {
+        if (num < 1) {
+            System.out.println("Invalid Value");
+        }
+        for (int i = 1; i <= num; i++) {
+            if (num % i == 0) {
+                System.out.println(i);
+            }
+        }
+    }
+
+    public static boolean isPerfectNumber(int num) {
+        if (num < 1) return false;
+        if (num % 2 > 0) return false;
+
+        int total = 0;
+        for (int i = 1; i < num; i++) {
+            if (num % i == 0) {
+                total += i;
+            }
+        }
+        return num == total;
+    }
+
+    public static void numberToWord(int num) {
+        num = reversed(num);
+        int digit;
+
+        while (num != 0) {
+            digit = num % 10;
+            num = num / 10;
+
+            switch(digit){
+                case 0:
+                    System.out.println("Zero ");
+                    break;
+                case 1:
+                    System.out.println("One ");
+                    break;
+                case 2:
+                    System.out.println("Two ");
+                    break;
+                case 3:
+                    System.out.println("Three ");
+                    break;
+                case 4:
+                    System.out.println("Four ");
+                    break;
+                case 5:
+                    System.out.println("Five ");
+                    break;
+                case 6:
+                    System.out.println("Six ");
+                    break;
+                case 7:
+                    System.out.println("Seven ");
+                    break;
+                case 8:
+                    System.out.println("Eight ");
+                    break;
+                case 9:
+                    System.out.println("Nine ");
+                    break;
+            }
+
+        }
+
+    }
+
+    public static int reversed(int num) {
+        int reversed = 0;
+        int truncated = num;
+
+        while (truncated != 0) {
+            reversed *= 10; // moves number over by order of magnitude to create a new 0 position
+            reversed += truncated % 10; // the remainder is added to the new 0 position
+            truncated /= 10; // the truncated number has the last digit dropped off since it is an int with decimal
+        }
+        return reversed;
+    }
 }
+
+
