@@ -22,7 +22,9 @@ public class Main {
 //            System.out.println("count " + count);
 //            count++;
 //        } while (count <= 9);
-        numberToWord(123);
+        numberToWords(10);
+        System.out.println(getDigitCount(0));
+        System.out.println(getDigitCount(123));
     }
 
     public static int sumDigits(int number) {
@@ -176,52 +178,75 @@ public class Main {
         return num == total;
     }
 
-    public static void numberToWord(int num) {
-        num = reversed(num);
-        int digit;
+    public static void numberToWords(int num) {
+        if (num < 0) {
+            System.out.println("Invalid Value");
+        }else{
+            if (num == 0) {
+                System.out.println("Zero");
+            } else {
 
-        while (num != 0) {
-            digit = num % 10;
-            num = num / 10;
 
-            switch(digit){
-                case 0:
-                    System.out.println("Zero ");
-                    break;
-                case 1:
-                    System.out.println("One ");
-                    break;
-                case 2:
-                    System.out.println("Two ");
-                    break;
-                case 3:
-                    System.out.println("Three ");
-                    break;
-                case 4:
-                    System.out.println("Four ");
-                    break;
-                case 5:
-                    System.out.println("Five ");
-                    break;
-                case 6:
-                    System.out.println("Six ");
-                    break;
-                case 7:
-                    System.out.println("Seven ");
-                    break;
-                case 8:
-                    System.out.println("Eight ");
-                    break;
-                case 9:
-                    System.out.println("Nine ");
-                    break;
+
+
+                int digitCount = getDigitCount(num);
+                int digit;
+                num = reverse(num);
+                int reversedDigitCount = getDigitCount(num);
+
+
+                while (num != 0) {
+                    digit = num % 10;
+                    num = num / 10;
+
+                    switch (digit) {
+                        case 0:
+                            System.out.println("Zero");
+                            break;
+                        case 1:
+                            System.out.println("One");
+                            break;
+                        case 2:
+                            System.out.println("Two");
+                            break;
+                        case 3:
+                            System.out.println("Three");
+                            break;
+                        case 4:
+                            System.out.println("Four");
+                            break;
+                        case 5:
+                            System.out.println("Five");
+                            break;
+                        case 6:
+                            System.out.println("Six");
+                            break;
+                        case 7:
+                            System.out.println("Seven");
+                            break;
+                        case 8:
+                            System.out.println("Eight");
+                            break;
+                        case 9:
+                            System.out.println("Nine");
+                            break;
+                    }
+
+                }
+                if (digitCount != reversedDigitCount) {
+                    int zeros = (digitCount - reversedDigitCount);
+                    for (int i = 0; i < zeros; i++) {
+                        System.out.println("Zero");
+                    }
+                }
             }
-
         }
+
+
 
     }
 
-    public static int reversed(int num) {
+    public static int reverse(int num) {
         int reversed = 0;
         int truncated = num;
 
@@ -231,6 +256,19 @@ public class Main {
             truncated /= 10; // the truncated number has the last digit dropped off since it is an int with decimal
         }
         return reversed;
+    }
+
+    public static int getDigitCount(int num) {
+        if (num < 0) return -1;
+        int count = 0;
+        while (num != 0) {
+            count++;
+            num = num / 10;
+
+        }
+        if (count == 0) count = 1;
+        return count;
+
     }
 }
 
