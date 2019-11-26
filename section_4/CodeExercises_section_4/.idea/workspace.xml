@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="6f7a5d3d-f32c-4396-949e-afc66e43d7d1" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/../ForLoop/.idea/description.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ForLoop/.idea/encodings.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ForLoop/.idea/misc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ForLoop/.idea/modules.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ForLoop/.idea/project-template.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ForLoop/.idea/workspace.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ForLoop/ForLoop.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ForLoop/out/production/ForLoop/com/company/Main.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ForLoop/src/com/company/Main.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Switch/.idea/description.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Switch/.idea/encodings.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Switch/.idea/misc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Switch/.idea/modules.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Switch/.idea/project-template.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Switch/.idea/workspace.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Switch/Switch.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Switch/out/production/Switch/com/company/Main.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Switch/src/com/company/Main.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../WhileLoop/.idea/description.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../WhileLoop/.idea/encodings.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../WhileLoop/.idea/misc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../WhileLoop/.idea/modules.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../WhileLoop/.idea/project-template.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../WhileLoop/.idea/vcs.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../WhileLoop/.idea/workspace.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../WhileLoop/WhileLoop.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../WhileLoop/out/production/WhileLoop/com/company/Main.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../WhileLoop/src/com/company/Main.java" beforeDir="false" />
+    </list>
+    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
+  </component>
+  <component name="IgnoredFileRootStore">
+    <option name="generatedRoots">
+      <set>
+        <option value="C:\Users\s-lit\Desktop\java\java_buchalka\CodeExercises_section_4\.idea" />
+      </set>
+    </option>
+  </component>
+  <component name="ProjectId" id="1U4BqgGy5jp51TpJKmGkiVKieiw" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="RunDashboard">
+    <option name="ruleStates">
+      <list>
+        <RuleState>
+          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
+        </RuleState>
+        <RuleState>
+          <option name="name" value="StatusDashboardGroupingRule" />
+        </RuleState>
+      </list>
+    </option>
+  </component>
+  <component name="RunManager">
+    <configuration name="Main" type="Application" factoryName="Application" temporary="true">
+      <option name="MAIN_CLASS_NAME" value="com.company.Main" />
+      <module name="CodeExercises_section_4" />
+      <option name="WORKING_DIRECTORY" value="file://$PROJECT_DIR$" />
+      <RunnerSettings RunnerId="Run" />
+      <ConfigurationWrapper RunnerId="Run" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Application.Main" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="6f7a5d3d-f32c-4396-949e-afc66e43d7d1" name="Default Changelist" comment="" />
+      <created>1574606179587</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1574606179587</updated>
+    </task>
+    <servers />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State>
+              <option name="COLUMN_ORDER" />
+            </State>
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+</project>
