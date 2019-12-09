@@ -1,6 +1,7 @@
 package com.company;
 
 import java.sql.SQLOutput;
+import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.Scanner;
 
@@ -69,6 +70,9 @@ public class Main {
                 case 6:
                     quit = true;
                     break;
+                case 7:
+                    processArrayList();
+                    break;
             }
         }
     }
@@ -90,31 +94,39 @@ public class Main {
 
     public static void modifyItem() {
         System.out.print("Enter Item Number: ");
-        int itemNo = scanner.nextInt();
-        scanner.nextLine();
+        String itemNo = scanner.nextLine();
         System.out.print("Enter replacement item: ");
         String newItem = scanner.nextLine();
-        groceryList.modifyGroceryItem(itemNo - 1, newItem); // deduct 1 to translate into an array index number
+        groceryList.modifyGroceryItem(itemNo, newItem); // deduct 1 to translate into an array index number
     }
 
     public static void removeItem() {
         System.out.print("Enter Item Number: ");
-        int itemNo = scanner.nextInt();
-        scanner.nextLine();
-        groceryList.removeGroceryItem(itemNo-1);
+        String itemNo = scanner.nextLine();
+        groceryList.removeGroceryItem(itemNo);
 
     }
 
     public static void searchForItem() {
         System.out.print("Item to search for");
         String searchItem = scanner.nextLine();
-        if(groceryList.findItem(searchItem)!= null){
-            System.out.println("Found " + searchItem +  " in our grocery list");
-        }else{
+        if (groceryList.onFileString(searchItem)) {
+            System.out.println("Found " + searchItem + " in our grocery list");
+        } else {
             System.out.println(searchItem + " is not int he shopping list");
         }
     }
 
+    public static void processArrayList() {
+        ArrayList<String> newArray = new ArrayList<String>();
+        newArray.addAll(groceryList.getGroceryList());
+
+        ArrayList<String> nextArray = new ArrayList<String>(groceryList.getGroceryList());
+
+        // Converst ArrayList to normal array
+        String[] myArray = new String[groceryList.getGroceryList().size()];
+        myArray = groceryList.getGroceryList().toArray(myArray);
+    }
 
 //    public static int[] getIntegers(int number) {
 //        System.out.println("Enter " + number + " integer values. \r");
