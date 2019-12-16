@@ -96,4 +96,13 @@ public class MyLinkedList implements NodeList {
         }
 
     }
+
+    // traverse method as a recursive function
+    // not recommended for a linked list
+    public void traverseRecursively(ListItem root) {
+        if (root != null) {
+            System.out.println(root.getValue());
+            traverse(root.next());
+        }
+    }
 }
