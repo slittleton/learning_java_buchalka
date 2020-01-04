@@ -1,0 +1,29 @@
+
+
+            Collection                                  Map
+                |                                        |
+       ---------------------------------              SortedMap
+       |             |        |        |
+      set           List    Queue    Deque
+       |
+    SortedSet
+
+
+
+comparable interface
+
+
+
+
+List methods
+sort — sorts a List using a merge sort algorithm, which provides a fast, stable sort. (A stable sort is one that does not reorder equal elements.)
+shuffle — randomly permutes the elements in a List.
+reverse — reverses the order of the elements in a List.
+rotate — rotates all the elements in a List by a specified distance.
+swap — swaps the elements at specified positions in a List.
+replaceAll — replaces all occurrences of one specified value with another.
+fill — overwrites every element in a List with the specified value.
+copy — copies the source List into the destination List.
+binarySearch — searches for an element in an ordered List using the binary search algorithm.
+indexOfSubList — returns the index of the first sublist of one List that is equal to another.
+lastIndexOfSubList — returns the index of the last sublist of one List that is equal to another.
